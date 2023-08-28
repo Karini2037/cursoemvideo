@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+    @font-face {
+        font-family: Adeventure;
+        src: url('/font/Adventure.otf') format('opentype');
+        font-weight:normal;
+    }
+
+    @font-face {
+        font-family: Homemade;
+        src: url('Homemade Sausage.ttf') format('truetype');
+        font-weight: normal;
+    }
+
+    :root{
+        --font-padrao:Arial, Verdana, Helvetica, sans-serif;
+        --font-principal:'Adeventure', cursive;
+        --font-destaque:'Homemade', cursive;
+    }
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    font-family: var(--font-padrao);
+    background-color:#B3BF99;
+    margin: auto;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #818A6F, #617339,#363F20);
+    color: white;
+    min-height: 150px;
+    text-align: center;
+    padding: 30px;
+
+}
+
+header >  h1 {
+    font-family: var(--font-padrao);
+    color:white;
+    margin: 30px;
+    font-size: 3em;
+    font-weight: normal;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.271);
+}
+
+header > p {
+    font-family: var(--font-padrao);
+    color: white;
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
+}
+
+nav{
+    background-color: #363F20;
+    padding: 20px;
+    margin: auto;
+}
+
+nav > a {
+    color: white;
+    padding: 5px;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 1em;
+    font-family: var(--font-padrao);
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.375);
+    transition-duration: 1s;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    background-color: #818A6F;
+    color: white;
+}
+
+
+main {
+    max-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
+}
+
+article > h1 {
+    text-align: center;
+    color:  #1a5c37;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 2.5em;
+    font-family: var(--font-principal);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.022);
+    margin-bottom: 20px;
+}
+
+article > h2 {
+    text-align: center;
+    color: #1a5c37;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: var(--font-principal);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.22);
+    margin-bottom: 20px;
+}
+
+article > h3 {
+    text-align: center;
+    background-image: linear-gradient(to right,  #B3BF99, transparent);
+    color: #617339;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: var(--font-destaque);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.062);
+    margin-top: 20px;
+    border-radius: 5px;
+}
+article > p {
+font-family: var(--font-padrao);
+font-size: 1.2em;
+text-indent: 5%;
+line-height: 1.2em;
+
+}
+strong {
+    background-color: #B3BF99;
+    color: #363F20;
+    font-weight: bold;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 3px;
+    
+}
+
+img {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+div.video{
+    background-color: #617339;
+    margin-bottom: 30px;
+    margin: 10px -20px 10px -20px;
+    padding: 30px;
+    padding-bottom: 55%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside {
+    background-color: #B3BF99;
+    margin: 0px -20px 0px -20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+aside h3 {
+    text-align: center;
+    background-color: #617339;
+    color: white;
+    font-family: var(--font-destaque);
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.181);
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul {
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    font-size: 1em;
+    text-indent: 5%;
+    list-style: inside;
+    columns: 2;
+    margin-left: 40px;
+    padding: 10px;
+}
+
+aside {
+    text-indent: 2%;
+}
+
+aside a {
+    color: #1a5c37;
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+aside a:hover {
+    text-decoration: underline;
+    color: white;
+    
+}
+
+footer{
+    text-align: center;
+    background-color: #363F20;
+    color: #B3BF99;
+    margin-top: 5px;
+    padding: 5px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.318);
+}
